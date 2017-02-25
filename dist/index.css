@@ -1,0 +1,127 @@
+/*
+  (C) 2017 David Lettier
+  lettier.com
+*/
+body {
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #343438;
+  color: white;
+  height: 100%;
+  line-height: 2; }
+
+input {
+  margin-right: 4px;
+  outline: none;
+  border: none;
+  border-radius: 1px;
+  padding: 2px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  color: #222; }
+
+li {
+  list-style: none;
+  margin-top: 3px; }
+
+button {
+  background-color: #6f6cb9;
+  color: white;
+  font-weight: bold;
+  margin: 2px;
+  border-style: none;
+  border-radius: 1px;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 3px 0px #190d25;
+  -moz-box-shadow: 0px 3px 3px 0px #190d25;
+  box-shadow: 0px 3px 3px 0px #190d25; }
+
+#pageContainer {
+  height: 100%; }
+
+#chartContainer {
+  margin-right: 10px; }
+
+#instructionsContainer {
+  margin-bottom: 20px; }
+
+#uiContainer {
+  margin-left: 10px; }
+
+#logoContainer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  clear: both; }
+
+#logo {
+  width: 250px;
+  height: 250px; }
+  @media (max-width: 1440px) {
+    #logo {
+      width: 200px;
+      height: 200px; } }
+  @media (max-width: 1024px) {
+    #logo {
+      width: 150px;
+      height: 150px; } }
+  @media (max-width: 768px) {
+    #logo {
+      width: 100px;
+      height: 100px; } }
+
+.status {
+  display: block; }
+
+.matrixSizeInput {
+  width: 300px; }
+
+.matricesContainer {
+  display: flex;
+  margin-top: 10px; }
+
+.matrixBContainer {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid white; }
+
+.matrixRow {
+  display: flex; }
+
+.matrixValueInput {
+  width: 45px;
+  height: 45px;
+  margin: 1px;
+  text-align: center; }
+
+.runButton {
+  display: inline-block;
+  background-color: #00c17c;
+  margin-left: 10px; }
+
+.removeButton {
+  background-color: #f52f57; }
+
+.defaultCursor {
+  cursor: default; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.blue {
+  background-color: #6b89e0;
+  color: white; }
+
+.lightBlue {
+  background-color: #99b3ff; }
+
+.red {
+  background-color: #dc5c90;
+  color: white; }
+
+.lightRed {
+  background-color: #ff86b7; }

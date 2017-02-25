@@ -1,0 +1,24 @@
+{
+    "name": "matrix-inverse-calculator",
+    "description": "Matrix Inverse Calculator",
+    "homepage": "http://lettier.com/matrix-inverse/",
+    "license": "Apache-2.0",
+    "author": "David Lettier",
+    "private": true,
+    "scripts": {
+        "installPackages": "yarn && bower install",
+        "buildSrc": "pulp build",
+        "buildDist": "mkdir -p dist && pulp browserify --to dist/app.js && node-sass static/scss/index.scss dist/index.css && cp -R static/images/. dist/ && cp -R static/html/. dist/",
+        "watchBuildDist": "onchange './static/**/*' './src/*' -i -- yarn buildDist"
+    },
+    "dependencies": {
+        "onchange": "^3.2.1",
+        "virtual-dom": "^2.1.1"
+    },
+    "devDependencies": {
+        "node-sass": "4.3.0",
+        "onchange": "3.2.1",
+        "pulp": "10.0.0",
+        "purescript": "0.10.2"
+    }
+}
